@@ -12,61 +12,53 @@ Sono inclusi anche grafici comparativi fra oscillatori non armonici e quello arm
 
 ---
 
-## 📚 Teoria
+## Teoria
 
 Consideriamo un oscillatore unidimensionale con potenziale \( V(x) \).  
 L’energia totale dell’oscillatore è:
 
-\[
-E = V(x_0)
-\]
+$$E = V(x_0)$$
 
-dove \( x_0 \) è l’ampiezza massima.
+
+dove $x_0$ è l’ampiezza massima.
 
 Il **periodo di oscillazione** è dato da:
 
-\[
-T = \sqrt{8m}\int_{0}^{x_0} \frac{dx}{\sqrt{V(x_0) - V(x)}}
-\]
+
+$$T = \sqrt{8m}\int_{0}^{x_0} \frac{dx}{\sqrt{V(x_0) - V(x)}}$$
+
 
 L’integrazione viene eseguita numericamente tramite il metodo di Simpson.
 
 ### Potenziali Implementati
 
-#### 🔹 Oscillatore armonico (k2)
-\[
-V(x) = k x^2
-\]
+####  Oscillatore armonico (k2)
 
-#### 🔹 Anarmonico morbido (k4)
-\[
-V(x) = k x^4
-\]
+$$V(x) = k x^2$$
 
-#### 🔹 Anarmonico duro (k6)
-\[
-V(x) = k x^6
-\]
 
-#### 🔹 Sub-armonico modulato (mod)
-\[
-V(x) = k |x|^{1.5}
-\]
+####  Anarmonico morbido (k4)
+
+$$V(x) = k x^4$$
+
+
+####  Anarmonico duro (k6)
+
+$$V(x) = k x^6$$
+
+
+####  Sub-armonico modulato (mod)
+
+$$V(x) = k |x|^{1.5}$$
+
 
 ---
 
-## ▶️ Esecuzione
 
-Per lanciare una simulazione:
-
-```bash
-python3 main.py --potenziale k6
-python3 main.py --potenziale k6 --confronta
-
-# 📊 Risultati e Trattazione dei Grafici
+# Risultati e Trattazione dei Grafici
 
 Di seguito i grafici generati dal programma con la relativa trattazione.  
-Le immagini sono indicate come `1.png` … `7.png`.
+
 
 ---
 
@@ -130,4 +122,17 @@ Per ampiezze elevate l’anarmonico duro supera l’armonico, mostrando la forte
 
 **Commento:**  
 La differenza rispetto all’armonico segue un andamento complesso: il comportamento sub-armonico non è monotono e dipende dall’ampiezza.
+
+
+
+
+
+## ▶️ Esecuzione
+
+Per lanciare una simulazione: 
+
+```bash
+python3 main.py --potenziale k6
+python3 main.py --potenziale k6 --confronta
+
 
