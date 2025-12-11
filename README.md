@@ -62,77 +62,77 @@ Di seguito i grafici generati dal programma con la relativa trattazione.
 
 ---
 
-## 1️⃣ Oscillatore Armonico
+## Oscillatore Armonico
 
-![Oscillatore armonico](k2.png)
+![Oscillatore armonico](immagini/k2.png)
 
-**Commento:**  
+ 
 Il periodo rimane costante al variare dell’ampiezza. La curva è praticamente orizzontale, come previsto per un potenziale quadratico.
 
 ---
 
-## 2️⃣ Oscillatore Anarmonico Morbido (k4)
+## Oscillatore Anarmonico Morbido (k4)
 
-![Oscillatore anarmonico morbido](k4.png)
+![Oscillatore anarmonico morbido](immagini/k4.png)
 
-**Commento:**  
+
 Il periodo aumenta con l’ampiezza. Il potenziale più piatto vicino all’origine rallenta il moto alle grandi ampiezze.
 
 ---
 
-## 3️⃣ Oscillatore Anarmonico Duro (k6)
+## Oscillatore Anarmonico Duro (k6)
 
-![Oscillatore anarmonico duro](k6.png)
+![Oscillatore anarmonico duro](immagini/k6.png)
 
-**Commento:**  
+ 
 Il periodo cresce più rapidamente all’aumentare di \(x_0\) a causa della forte crescita del potenziale.
 
 ---
 
-## 4️⃣ Oscillatore Sub-armonico Modulato (mod)
+## Oscillatore Sub-armonico Modulato (mod)
 
-![Oscillatore modulato](mod.png)
+![Oscillatore modulato](immagini/mod.png)
 
-**Commento:**  
+
 Il periodo presenta una dipendenza non lineare dall’ampiezza iniziale. Il comportamento è intermedio rispetto ai casi morbido e duro.
 
 ---
 
-## 5️⃣ Confronto: Armonico vs Anarmonico Morbido
+## Confronto: Armonico vs Anarmonico Morbido
 
-![Confronto armonico-k4](confronto_k2_k4.png)
+![Confronto armonico-k4](immagini/confronto_k2_k4.png)
 
-**Commento:**  
+
 L’anarmonico morbido ha sempre un periodo maggiore dell’armonico. La differenza cresce con l’ampiezza, evidenziando la non linearità.
 
 ---
 
-## 6️⃣ Confronto: Armonico vs Anarmonico Duro
+## Confronto: Armonico vs Anarmonico Duro
 
-![Confronto armonico-k6](confronto_k2_k6.png)
+![Confronto armonico-k6](immagini/confronto_k2_k6.png)
 
-**Commento:**  
+
 Per ampiezze elevate l’anarmonico duro supera l’armonico, mostrando la forte influenza del potenziale ripido.
 
 ---
 
-## 7️⃣ Confronto: Armonico vs Sub-armonico Modulato
+## Confronto: Armonico vs Sub-armonico Modulato
 
-![Confronto armonico-mod](confronto_k2_mod.png)
+![Confronto armonico-mod](immagini/confronto_k2_mod.png)
 
-**Commento:**  
+
 La differenza rispetto all’armonico segue un andamento complesso: il comportamento sub-armonico non è monotono e dipende dall’ampiezza.
 
 
 
 
 
-## ▶️ Esecuzione
+## Esecuzione
 
 Per lanciare una simulazione: 
 
 ```bash
-python3 main.py --potenziale k6
-python3 main.py --potenziale k6 --confronta
+python3 oscillatore.py --potenziale k6
+python3 oscillatore.py --potenziale k6 --confronta
 
 
